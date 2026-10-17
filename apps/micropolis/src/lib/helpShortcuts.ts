@@ -44,6 +44,7 @@ export const HELP_SECTIONS: HelpSection[] = [
 		title: 'Other',
 		rows: [
 			{ keys: '\\', action: 'Generate random city' },
+			{ keys: 'Space', action: 'Toggle experimental cellular automata (changes map data)' },
 			{ keys: '?', action: 'Show / hide this help' },
 			{ keys: 'Esc', action: 'Close this help' },
 		],

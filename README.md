@@ -1,3 +1,5 @@
+> **macOS Tauri版（変更版）:** 起動・ビルド・検証結果は [README.macOS.md](README.macOS.md) を参照してください。以下は元プロジェクトのREADMEです。
+
 # Micropolis
 
 **Open source city simulation, based on the original SimCity Classic by Will Wright.**

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Micropolis",
+  "version": "0.1.0",
+  "identifier": "io.github.toshiyuki-kanai.micropolis-tauri",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://127.0.0.1:5178",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Micropolis",
+        "width": 1280,
+        "height": 850,
+        "minWidth": 900,
+        "minHeight": 600
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' ipc: http://ipc.localhost; object-src 'none'; base-uri 'self'; frame-src 'none'",
+      "capabilities": [
+        {
+          "identifier": "main",
+          "windows": [
+            "main"
+          ],
+          "permissions": [
+            "core:default",
+            "core:menu:default",
+            "core:window:allow-close",
+            "core:window:allow-destroy",
+            "dialog:default",
+            "fs:allow-read-file",
+            "fs:allow-write-file"
+          ]
+        }
+      ]
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "app"
+    ],
+    "category": "Game",
+    "shortDescription": "Classic Micropolis city simulation",
+    "copyright": "Copyright \u00a9 1989\u20132007 Electronic Arts Inc. and Micropolis contributors. Modified Tauri distribution.",
+    "macOS": {
+      "minimumSystemVersion": "13.0",
+      "signingIdentity": "-"
+    },
+    "icon": [
+      "icons/icon.icns",
+      "icons/icon.png"
+    ]
+  }
+}

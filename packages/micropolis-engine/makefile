@@ -75,10 +75,11 @@ EMCXXFLAGS = \
 EMLDFLAGS = \
     -s WASM=1 \
     -s MODULARIZE=1 \
+    -s DYNAMIC_EXECUTION=0 \
     -s EXPORT_ES6=1 \
     -s 'ENVIRONMENT=web,worker,node' \
     -s ALLOW_MEMORY_GROWTH=1 \
-    -s 'EXPORTED_RUNTIME_METHODS=["HEAPU16","wasmMemory"]' \
+    -s 'EXPORTED_RUNTIME_METHODS=["HEAPU16","wasmMemory","FS"]' \
 	-lembind \
 	--emit-tsd=micropolisengine.d.ts \
 	--shell-file src/micropolisengine_template.html \
@@ -168,7 +169,7 @@ install: all
 	ls -la build
 	cp build/micropolisengine.wasm ../../apps/micropolis/src/lib
 	cp build/micropolisengine.data ../../apps/micropolis/src/lib
-	{ printf '%s\n' '// @ts-nocheck'; cat build/micropolisengine.js; } > ../../apps/micropolis/src/lib/micropolisengine.js
+	{ printf '%s\n' '// @ts-nocheck'; sed 's/[[:blank:]]*$$//' build/micropolisengine.js; } > ../../apps/micropolis/src/lib/micropolisengine.js
 	if [ -f build/micropolisengine.d.ts ]; then cp build/micropolisengine.d.ts ../../apps/micropolis/src/types; else echo "micropolisengine.d.ts was not generated; keeping existing TypeScript bindings"; fi
 
 clean:

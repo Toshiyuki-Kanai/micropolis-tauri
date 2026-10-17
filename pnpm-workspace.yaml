@@ -6,3 +6,8 @@ packages:
   # modules, a module owns bridges. See apps/screen-angel/SCREEN-ANGEL.yml#the_ladder.
   - 'apps/screen-angel/modules/*'
   - 'apps/screen-angel/modules/*/bridges/*'
+
+# Native tools required by the existing Vite build.
+allowBuilds:
+  esbuild: true
+  "@swc/core": true

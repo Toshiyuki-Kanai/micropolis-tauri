@@ -1076,6 +1076,8 @@ function createTypedArrayFromMap(mapInstance) {
     .function("setCallback", &Micropolis::setCallback, allow_raw_pointers())
     .function("init", &Micropolis::init)
     .function("loadCity", &Micropolis::loadCity)
+    // Desktop shell uses the existing binary save implementation unchanged.
+    .function("saveFile", &Micropolis::saveFile)
     .function("simTick", &Micropolis::simTick)
     .function("simUpdate", &Micropolis::simUpdate)
     .function("generateSomeRandomCity", &Micropolis::generateSomeRandomCity)

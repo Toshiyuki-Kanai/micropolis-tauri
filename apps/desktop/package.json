@@ -1,0 +1,35 @@
+{
+  "name": "@micropolis/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5178 --strictPort",
+    "build": "vite build",
+    "tauri": "tauri",
+    "test": "vitest run",
+    "prebuild": "pnpm --filter micropolis exec svelte-kit sync",
+    "predev": "pnpm --filter micropolis exec svelte-kit sync",
+    "test:webkit": "node ../../script/verify-webkit.mjs",
+    "check": "pnpm --filter micropolis exec svelte-check --workspace ../desktop --tsconfig ./tsconfig.json"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.0.0",
+    "@tauri-apps/plugin-dialog": "^2.0.0",
+    "@tauri-apps/plugin-fs": "^2.0.0",
+    "@micropolis/render-core": "workspace:*",
+    "@micropolis/tile-renderer": "workspace:*",
+    "@fontsource/fira-mono": "^4.5.10",
+    "svelte": "^5.55.5"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0",
+    "@sveltejs/vite-plugin-svelte": "^4.0.4",
+    "vite": "^5.0.3",
+    "typescript": "^5.0.0",
+    "vitest": "^2.1.9",
+    "vite-plugin-static-copy": "^1.0.5",
+    "micropolis": "workspace:*",
+    "playwright": "1.62.1"
+  }
+}

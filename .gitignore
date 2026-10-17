@@ -95,3 +95,15 @@ apps/screen-angel/modules/soul-angel/bridges/sims1/fixtures/*
 !apps/screen-angel/modules/soul-angel/bridges/sims1/fixtures/README.md
 # Font contact sheets and metrics dumps: regenerate with export-fonts, the pack is the asset.
 apps/screen-angel/modules/soul-angel/bridges/sims1/exports/
+
+# Local desktop toolchains and Tauri output
+.tools/
+apps/desktop/dist/
+apps/desktop/src-tauri/target/
+apps/desktop/src-tauri/gen/
+
+# Local environment values (keep distributable examples)
+.env
+.env.*
+!.env.example
+!.env.template
