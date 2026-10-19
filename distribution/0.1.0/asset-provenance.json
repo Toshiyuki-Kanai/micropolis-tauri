@@ -1,0 +1,592 @@
+{
+  "repository": "https://github.com/SimHacker/micropolis",
+  "commit": "c98f6b08519887b450d9be198bfca5237aab6d0c",
+  "license": "GPL-3.0-or-later with EA additional terms",
+  "licenseEvidence": "micropolis-activity/README lines 18-82 cover images, cities, and activity icon",
+  "assets": [
+    {
+      "sourcePath": "micropolis-activity/README",
+      "file": "distribution/source-assets/micropolis-gpl/README",
+      "gitBlob": "ba9736f7d621b1bf30a30d2adcbd15eb23ae0eeb",
+      "sha256": "1d2b942bf5f657b85c07385f90049fa5caf3345cdeed2d49e59ce34dc8625d39"
+    },
+    {
+      "sourcePath": "micropolis-activity/COPYING",
+      "file": "distribution/source-assets/micropolis-gpl/COPYING",
+      "gitBlob": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/tiles.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/tiles.xpm",
+      "gitBlob": "f9db51d1ca0992b65d6e80e30ca407bd4b1c6576",
+      "sha256": "5a2432b42112aa1e904c736e362f75bc902e8c60adf69f4c965995f869ef6cbb"
+    },
+    {
+      "sourcePath": "micropolis-activity/activity/activity-micropolis.svg",
+      "file": "distribution/source-assets/micropolis-gpl/activity-micropolis.svg",
+      "gitBlob": "00392f86cf7b30fff97579915b3cde475f557d68",
+      "sha256": "d00105c797d6fbafe4dfe85679b2eba69d3bcb5158f6dc2372c783de3561ae67"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj1-0.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj1-0.xpm",
+      "gitBlob": "5caa2aedd94be0e164b722eb09e7aff3c03a399e",
+      "sha256": "18254332f8f6adf49e90c36c112960438e8335a63842d77fe672ce6a3d6f058f"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj1-1.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj1-1.xpm",
+      "gitBlob": "df6fee86f7da57bc3bbad81842c3e6ceec4335b2",
+      "sha256": "4cb830f710e4d1ecd1c37ea972c1782a4bab98c34bf10784df3f5a35bfa31d16"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj1-2.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj1-2.xpm",
+      "gitBlob": "f11e6913ae5e4c098005e76341a8d45496520ca0",
+      "sha256": "907d7beab8b3e3dd89d6383c9cca800022bca4e9fc19f540c7689974905af1b7"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj1-3.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj1-3.xpm",
+      "gitBlob": "0a49af178a614551b731eb2d3e1fa1fc49f55b75",
+      "sha256": "ce36f238b40c2ded27e0ecd4b96dc75f433b3c0ba83dcf59eb76b26825b0512b"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj1-4.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj1-4.xpm",
+      "gitBlob": "f9314373f65148d0eb9e348949d7dff3eb43c2b4",
+      "sha256": "f4da90d6d2545a4f46b5a4c991339b2d8f7b01402097953bc8708063be941ce1"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj2-0.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj2-0.xpm",
+      "gitBlob": "c860a6b960328aa55581186a9a204df10ce2e8b3",
+      "sha256": "fc2777ad9bd683a266c1c8854b2813d399be5ee45f97f75aa5a45f2c37ab4db7"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj2-1.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj2-1.xpm",
+      "gitBlob": "b5241262e61dd57d3661f23c8d66be610b35e86b",
+      "sha256": "eb3cceb0f89c1089320c566f0aaf6815ee7a4baf918984c8d8d6e2246be55196"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj2-2.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj2-2.xpm",
+      "gitBlob": "5a35956c554d5b3516ffa1afbbcc47074f56d00c",
+      "sha256": "dffa007ac61be6cd656e59df1764d910180ecf42e2cd495db93d820a32559e80"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj2-3.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj2-3.xpm",
+      "gitBlob": "9cffdefbb5bbb99052344f639caf4692356702ac",
+      "sha256": "e2b90be5aa4a561357c3dea5e64a11be8d4977c41ca441633c32400bf0253688"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj2-4.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj2-4.xpm",
+      "gitBlob": "88108e36a970ca78d2e783d384b7f4ac9fb220d2",
+      "sha256": "b5eae95ffa5be20200f62175db6ed32410aaa77e2c2f7154feca8f9888d7e798"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj2-5.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj2-5.xpm",
+      "gitBlob": "6447e8d7005149b6ab50ae10f2f7fe4ec6448f78",
+      "sha256": "3a755e68938d0f1e80c2d8667aeba36b230b435d364124cba9b1453e1b4c6f8a"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj2-6.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj2-6.xpm",
+      "gitBlob": "2c90fce94524997b3d620de533e82715dd244d88",
+      "sha256": "385bf39cf6781324777971e31eaa2e69b26e0bc5716752fea0731dac40cda94f"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj2-7.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj2-7.xpm",
+      "gitBlob": "2d545550b9331a3b4087d507a2a0a69b3c549077",
+      "sha256": "fa07cf468fbf5ea2f5f003765867ca8e2099a700e0eb8d13e0311bb20ce17c90"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj3-0.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj3-0.xpm",
+      "gitBlob": "044ecf02cf3beffd3c03fd7b02bc09272c067448",
+      "sha256": "54ddc84a731bf771ed08ba4d5ae88de9ee6ab4d68ab9079b6124a483bf8c5900"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj3-1.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj3-1.xpm",
+      "gitBlob": "777e7ef2ba8a4bc6532d9c9eb595b9a80a5a6976",
+      "sha256": "74f702d49dc07cf004576d30b54fa1ed59989313fedf45569244234a7ec2f941"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj3-10.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj3-10.xpm",
+      "gitBlob": "f5105c6e91c0ec7b893813bb74ed10d08fcb3697",
+      "sha256": "ec8a5aa2edec3b81bf4ff62423c0344ab0a56127424c937bbe088caf3f28301c"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj3-2.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj3-2.xpm",
+      "gitBlob": "160a4658944301b7e080c48e0155ec0501343bed",
+      "sha256": "d29b72013c61c56e74400d3c767441a2ce8bb878d4f9fd033b15af030685b3fb"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj3-3.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj3-3.xpm",
+      "gitBlob": "cf566e755778e19572dbd440ae6848d4c6d3b847",
+      "sha256": "dec6dfcb696f70c1d9618b31a029e517af8a3a2e7b1ced7d4f662fb59f73cb66"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj3-4.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj3-4.xpm",
+      "gitBlob": "30c9a223e9b3bd498fc5f335995bcabf32f805d5",
+      "sha256": "73da486aad09aaeb41b8f320296205b75d26e35ecf5a8f48a2f77934ca84f1e5"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj3-5.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj3-5.xpm",
+      "gitBlob": "7cac8bd1ceecb8b20a6b78323fba2baaa63d90eb",
+      "sha256": "1185ca53ed164dd4de65779f89474568638169f89304698be8cecb8c3b454383"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj3-6.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj3-6.xpm",
+      "gitBlob": "a5dab9d45022425d06bc24dd5bf865a681e67427",
+      "sha256": "58557bddfba7af70e8df486a584d1b2b6501b5e27cbbb8367bc48aec30db6645"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj3-7.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj3-7.xpm",
+      "gitBlob": "631debd9c03f50643a589468c6d28ac51a0947df",
+      "sha256": "3cb81a0a5fcdb54c4ee2ba15aec5754da325d6c1f6ead6c874031db2f4c29116"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj3-8.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj3-8.xpm",
+      "gitBlob": "c52be87add99059c3cf294e9420fb96ddb86bd55",
+      "sha256": "ff0b51d5eb981bb6c80dc7110a426a08f62a9fc98dcb8e5da87c8d44d99a269e"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj3-9.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj3-9.xpm",
+      "gitBlob": "87f3c40532422d09749e29acb2000febad9bc557",
+      "sha256": "e500f106600f78ebd4cae1f2e2f088dbfdc9669f46a26827b00f5cef81e776f0"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj4-0.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj4-0.xpm",
+      "gitBlob": "e704d06132112462a698a3e3aec1c82149c7a106",
+      "sha256": "a9f20308844e05be74de93d2cddc9edab557140ff84ea905c82f4d7e79dc963f"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj4-1.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj4-1.xpm",
+      "gitBlob": "49accd76f2b8c0a18370b4aeace2e86d35b89d08",
+      "sha256": "8d554badf5054f1a2327c2b025d0de2075108cb5f387400e9b1658a323e43a5d"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj4-2.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj4-2.xpm",
+      "gitBlob": "15f7cd3da529837020af7cc8dd0bb25165880b26",
+      "sha256": "5742efd0a88e248d1c2ff02177de5512d6e7a73db759edcc0b7ad454ea503992"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj4-3.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj4-3.xpm",
+      "gitBlob": "917f862279f0b8874ccb8ed589239043885e4963",
+      "sha256": "39f61c981221946206530f6a8ed4e6e5da27a6d5fcc95ef28466899e972394a1"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj4-4.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj4-4.xpm",
+      "gitBlob": "287e1a8b81b8593b0754cd0f6cb000bb7ab5d08b",
+      "sha256": "6f10e97bcbc109e16b8fb6a3692a5a1c1fc1203eb23ea76f1fbf9c426e57b351"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj4-5.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj4-5.xpm",
+      "gitBlob": "536a1e9a652e179626241823d06c12f3c433feb6",
+      "sha256": "1317796b9ea49aafd9f256146553f1860c4f587e77f8bd79a34dd7d5a8a3d1af"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj4-6.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj4-6.xpm",
+      "gitBlob": "cae6d4ab889db57250bb37e3f5ec4321c5b291b4",
+      "sha256": "6752df0cb4ab146a55ea97a13da42327ee008fa6342a6f05f4387115f68fc5ef"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj4-7.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj4-7.xpm",
+      "gitBlob": "6c5dfee00dc96e755833d25cbd0f2d8eed8a3e60",
+      "sha256": "77306e8c070cbff3cc374c7422a661211b5388825a5d1c61ba020e604f08a7e3"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj5-0.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj5-0.xpm",
+      "gitBlob": "1cbf74ac16c3c2283ecf0e3954c89bec526eb7ff",
+      "sha256": "980afa55e6d25f6f31830d356c36cdd61822a3062d9a4758bf5f432c490c2bc4"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj5-1.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj5-1.xpm",
+      "gitBlob": "40c1b3b7aa83001686a34ad8ac97a2603df4467c",
+      "sha256": "b465f22499806014c4f44af4745c9cd40bf5f413b95af57bacaec541543bc11f"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj5-10.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj5-10.xpm",
+      "gitBlob": "fa302d33935b4f25ba87c4c61f8f56f247950d92",
+      "sha256": "f9ec910981ea9671e91d2d47f454034537eb963cef9f1b55c43fc98bea0a77df"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj5-11.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj5-11.xpm",
+      "gitBlob": "aaed0d19db71414bc6f354bf00bd86aec2d47d16",
+      "sha256": "c96de8bc6030a746c1977922c5b716efccc93fab558e8a74eb8de2e6bf5b51a0"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj5-12.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj5-12.xpm",
+      "gitBlob": "17b048ba7d810b729b9141d3fdf782fbe02a1d9a",
+      "sha256": "1a402d0cd6efb63ff2e9db2d86206bac874bf3c5a3857d6cf6542a0fc56703fb"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj5-13.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj5-13.xpm",
+      "gitBlob": "efdee409eea173c19ecf2594195c9d83c6070d1a",
+      "sha256": "2eb423303f714afec953a718f71d87680d1e813e3fcf9af6f5dde7e72e090a18"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj5-14.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj5-14.xpm",
+      "gitBlob": "b8d3e93d122fbef31cf84f0783a67a63b48a42d0",
+      "sha256": "7a82aecbf05dae80b27b19191606d81376616666ad5e90c8475f52d40ae5a798"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj5-15.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj5-15.xpm",
+      "gitBlob": "d32abe11baec121f73bc42f62d6d01df8d881251",
+      "sha256": "0590dc50cffda849f723e75d5f4f3070e33dcab3662635b1bb2c951e59a0e09d"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj5-2.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj5-2.xpm",
+      "gitBlob": "fb3bc76d956b29d6f26d16e2c9bc5f40149befeb",
+      "sha256": "4b3fd64e103e6071541502bcd4572bdeca54d0c19e1216d443bfdc0b5dca525d"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj5-3.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj5-3.xpm",
+      "gitBlob": "35e0da1ed849759e33a35a37d123868e8a6f6b2b",
+      "sha256": "300c7471e99d708106ff10d496f06695b3c1c69b0ffb348551ab98a35f57e1cf"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj5-4.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj5-4.xpm",
+      "gitBlob": "0dd2b6b25f077d2d5fa6e5b132c57ea9e0ce4c28",
+      "sha256": "c6a2000db8de851c0bb8c42b1b7922426de5b9ff16c241ced1a4133db46c8447"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj5-5.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj5-5.xpm",
+      "gitBlob": "8f9ab99c9f3168dbedf885c4217ab34630f6ba58",
+      "sha256": "d73763cb6d65511e457650a28ab94087f5b412e8b8fb5218fb06c136f7182a93"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj5-6.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj5-6.xpm",
+      "gitBlob": "fdcecd88cfde1c151ec0472bf020ccc693d67c4a",
+      "sha256": "2a02970acaf444fd900176d9ab553b3418072572b087c10c92a1dd7de0b69aa3"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj5-7.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj5-7.xpm",
+      "gitBlob": "72ee3283af4babb0bf513fb23dd4e8ec0466f53e",
+      "sha256": "0f80ef7c855384c09c61e6b1b420f91c61c1e3c430d6c73400be36b1a226c401"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj5-8.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj5-8.xpm",
+      "gitBlob": "81afb4fd20bb250401e4ffc5a50de69b26c10c33",
+      "sha256": "5785c2d726221d0012dc30cc6f8feba54657b15d57cc38fb8e7d51ad09a70660"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj5-9.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj5-9.xpm",
+      "gitBlob": "8b5d8c1ab43310a856faa12c549dd02af5a155a2",
+      "sha256": "6243ebcdbd830746d158d6bf8a068db35010fa1643baebc908ed6231f7ee532a"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj6-0.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj6-0.xpm",
+      "gitBlob": "541101e6753d428fdfae7eabdcb2146b4c7b967d",
+      "sha256": "2af55d30962257ce612e4e70573a98000ec9d40e19ea0963a7f7bf59b6eaa72c"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj6-1.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj6-1.xpm",
+      "gitBlob": "27d30a44628439ee1f97af190024583d349c6201",
+      "sha256": "09fe1f966a4c6f31c2cbc06345059fa82ea7a0320426fdb57c314a7f7c1febe3"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj6-2.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj6-2.xpm",
+      "gitBlob": "795fe0546bfd813b10d61aa0b16449b530e1495a",
+      "sha256": "7cbba11d81ee8b2a9aa77ad44321251e90758082a07d5c82ad3372f22c02eedb"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj7-0.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj7-0.xpm",
+      "gitBlob": "895d2b8d72aa35d3bbf29a2862448b6a1492f50f",
+      "sha256": "d1479bab1e3bba283862122bf191617947984c3cee3125e4963f29d3ffa8f786"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj7-1.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj7-1.xpm",
+      "gitBlob": "ad91ed85dd951d868c11e57b0d351865e87d6c8e",
+      "sha256": "a862705bbd7d545c8933d5404a1f90b68c45cf1b9250b21b83f45c5e9fc6dee8"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj7-2.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj7-2.xpm",
+      "gitBlob": "4d78ab647f7acdfaa9be36525c4378e99b41ddb9",
+      "sha256": "df4b547861eebc427fdba3cc1b46193c509a26df32f2e675a5ea1b5a5f551f97"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj7-3.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj7-3.xpm",
+      "gitBlob": "f2a25d6694875e7122dd8411f9b4bb820e685725",
+      "sha256": "b550b221307758e3d0db524b402aa01040ffd52e5563d84e05da8aecd94d6adc"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj7-4.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj7-4.xpm",
+      "gitBlob": "84afc670646e592fe8cb60e3eb7b5b1097e68dce",
+      "sha256": "b67718ab39defaee85195ac27e63d8a599bcce5451e05b5c8231a68f9202014a"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj7-5.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj7-5.xpm",
+      "gitBlob": "2da0e872d799af45453099b3ecd6e299a112c228",
+      "sha256": "2c61d04ee638cbfcf524963b4a9d5de7f391a1f08c97e76f4358c169fd9fb052"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj8-0.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj8-0.xpm",
+      "gitBlob": "5caa2aedd94be0e164b722eb09e7aff3c03a399e",
+      "sha256": "18254332f8f6adf49e90c36c112960438e8335a63842d77fe672ce6a3d6f058f"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj8-1.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj8-1.xpm",
+      "gitBlob": "df6fee86f7da57bc3bbad81842c3e6ceec4335b2",
+      "sha256": "4cb830f710e4d1ecd1c37ea972c1782a4bab98c34bf10784df3f5a35bfa31d16"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj8-2.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj8-2.xpm",
+      "gitBlob": "f11e6913ae5e4c098005e76341a8d45496520ca0",
+      "sha256": "907d7beab8b3e3dd89d6383c9cca800022bca4e9fc19f540c7689974905af1b7"
+    },
+    {
+      "sourcePath": "micropolis-activity/images/obj8-3.xpm",
+      "file": "distribution/source-assets/micropolis-gpl/obj8-3.xpm",
+      "gitBlob": "0a49af178a614551b731eb2d3e1fa1fc49f55b75",
+      "sha256": "ce36f238b40c2ded27e0ecd4b96dc75f433b3c0ba83dcf59eb76b26825b0512b"
+    }
+  ],
+  "cityData": [
+    {
+      "file": "content/micropolis/cities/scenario_dullsville.cty",
+      "source": "micropolis-activity/res/snro.111",
+      "mapBytesIdentical": true,
+      "note": "Upstream scenario header metadata differs; map body is original GPL data."
+    },
+    {
+      "file": "content/micropolis/cities/scenario_san_francisco.cty",
+      "source": "micropolis-activity/res/snro.222",
+      "mapBytesIdentical": true,
+      "note": "Upstream scenario header metadata differs; map body is original GPL data."
+    },
+    {
+      "file": "content/micropolis/cities/scenario_hamburg.cty",
+      "source": "micropolis-activity/res/snro.333",
+      "mapBytesIdentical": true,
+      "note": "Upstream scenario header metadata differs; map body is original GPL data."
+    },
+    {
+      "file": "content/micropolis/cities/scenario_bern.cty",
+      "source": "micropolis-activity/res/snro.444",
+      "mapBytesIdentical": true,
+      "note": "Upstream scenario header metadata differs; map body is original GPL data."
+    },
+    {
+      "file": "content/micropolis/cities/scenario_tokyo.cty",
+      "source": "micropolis-activity/res/snro.555",
+      "mapBytesIdentical": true,
+      "note": "Upstream scenario header metadata differs; map body is original GPL data."
+    },
+    {
+      "file": "content/micropolis/cities/scenario_detroit.cty",
+      "source": "micropolis-activity/res/snro.666",
+      "mapBytesIdentical": true,
+      "note": "Upstream scenario header metadata differs; map body is original GPL data."
+    },
+    {
+      "file": "content/micropolis/cities/scenario_boston.cty",
+      "source": "micropolis-activity/res/snro.777",
+      "mapBytesIdentical": true,
+      "note": "Upstream scenario header metadata differs; map body is original GPL data."
+    },
+    {
+      "file": "content/micropolis/cities/scenario_rio_de_janeiro.cty",
+      "source": "micropolis-activity/res/snro.888",
+      "mapBytesIdentical": true,
+      "note": "Upstream scenario header metadata differs; map body is original GPL data."
+    },
+    {
+      "local": "content/micropolis/cities/badnews.cty",
+      "upstream": [
+        "micropolis-activity/cities/badnews.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/bluebird.cty",
+      "upstream": [
+        "micropolis-activity/cities/bluebird.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/radial.cty",
+      "upstream": [
+        "micropolis-activity/cities/radial.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/ndulls.cty",
+      "upstream": [
+        "micropolis-activity/cities/ndulls.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/finnigan.cty",
+      "upstream": [
+        "micropolis-activity/cities/finnigan.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/deadwood.cty",
+      "upstream": [
+        "micropolis-activity/cities/deadwood.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/happisle.cty",
+      "upstream": [
+        "micropolis-activity/cities/happisle.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/kyoto.cty",
+      "upstream": [
+        "micropolis-activity/cities/kyoto.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/neatmap.cty",
+      "upstream": [
+        "micropolis-activity/cities/neatmap.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/wetcity.cty",
+      "upstream": [
+        "micropolis-activity/cities/wetcity.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/southpac.cty",
+      "upstream": [
+        "micropolis-activity/cities/southpac.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/about.cty",
+      "upstream": [
+        "micropolis-activity/cities/about.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/yokohama.cty",
+      "upstream": [
+        "micropolis-activity/cities/yokohama.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/kobe.cty",
+      "upstream": [
+        "micropolis-activity/cities/kobe.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/joffburg.cty",
+      "upstream": [
+        "micropolis-activity/cities/joffburg.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/kamakura.cty",
+      "upstream": [
+        "micropolis-activity/cities/kamakura.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/med_isle.cty",
+      "upstream": [
+        "micropolis-activity/cities/med_isle.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/splats.cty",
+      "upstream": [
+        "micropolis-activity/cities/splats.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/senri.cty",
+      "upstream": [
+        "micropolis-activity/cities/senri.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/kowloon.cty",
+      "upstream": [
+        "micropolis-activity/cities/kowloon.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/bruce.cty",
+      "upstream": [
+        "micropolis-activity/cities/bruce.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/haight.cty",
+      "upstream": [
+        "micropolis-activity/cities/haight.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/freds.cty",
+      "upstream": [
+        "micropolis-activity/cities/freds.cty"
+      ]
+    },
+    {
+      "local": "content/micropolis/cities/linecity.cty",
+      "upstream": [
+        "micropolis-activity/cities/linecity.cty"
+      ]
+    }
+  ]
+}

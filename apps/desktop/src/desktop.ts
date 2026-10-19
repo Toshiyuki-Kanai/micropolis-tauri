@@ -53,7 +53,8 @@ export async function initializeDesktop() {
   const menu = await Menu.new({ items: [
     await Submenu.new({ text: 'Micropolis', items: [
       await PredefinedMenuItem.new({ item: { About: { name: 'Micropolis', version: '0.1.0',
-        copyright: '© 1989–2007 Electronic Arts Inc. and Micropolis contributors. Modified Tauri distribution. GPL-3.0-or-later; see bundled licenses.' } } }),
+        copyright: '© 1989–2007 Electronic Arts Inc. and Micropolis contributors. Modified Tauri distribution. GPL-3.0-or-later; no warranty. Micropolis is a registered trademark of Micropolis GmbH, used under the Micropolis Public Name License. Licenses and corresponding source: see the Licenses folder included with this app.' } } }),
+      await MenuItem.new({ text: 'Licenses and Source…', action: () => { void import('@tauri-apps/api/webviewWindow').then(async ({ WebviewWindow }) => { if (!(await WebviewWindow.getByLabel('licenses'))) new WebviewWindow('licenses', { url: 'licenses/index.html', title: 'Micropolis — Licenses and Source', width: 850, height: 700 }); }); } }),
       await PredefinedMenuItem.new({ item: 'Separator' }),
       await PredefinedMenuItem.new({ item: 'Hide' }),
       await PredefinedMenuItem.new({ item: 'HideOthers' }),
@@ -102,6 +103,12 @@ export async function handleCloseRequest(event: { preventDefault(): void }) {
       title: 'Micropolis', kind: 'warning'
     });
     if (!confirmed) event.preventDefault();
+    else if (isTauri()) {
+      // Closing the main game must also close the auxiliary license window.
+      const { WebviewWindow } = await import('@tauri-apps/api/webviewWindow');
+      const legalWindow = await WebviewWindow.getByLabel('licenses');
+      await legalWindow?.destroy();
+    }
   } catch (error) {
     event.preventDefault();
     await message(String(error), { title: 'Micropolis', kind: 'error' });

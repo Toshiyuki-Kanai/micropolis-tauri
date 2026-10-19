@@ -107,3 +107,7 @@ apps/desktop/src-tauri/gen/
 .env.*
 !.env.example
 !.env.template
+
+# Python release-tool caches
+__pycache__/
+*.pyc

@@ -1,7 +1,12 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { readFileSync } from 'node:fs';
+import { isTauri } from '@tauri-apps/api/core';
+import { WebviewWindow } from '@tauri-apps/api/webviewWindow';
 import { confirm, message } from '@tauri-apps/plugin-dialog';
 import { handleCloseRequest } from './desktop';
+
+vi.mock('@tauri-apps/api/core', async importOriginal => ({ ...(await importOriginal<typeof import('@tauri-apps/api/core')>()), isTauri: vi.fn(() => false) }));
+vi.mock('@tauri-apps/api/webviewWindow', () => ({ WebviewWindow: { getByLabel: vi.fn() } }));
 
 vi.mock('@tauri-apps/plugin-dialog', () => ({
   confirm: vi.fn(), message: vi.fn(), open: vi.fn(), save: vi.fn()
@@ -14,6 +19,26 @@ afterEach(() => {
 });
 
 describe('desktop close request regression', () => {
+  it('closes the auxiliary license window when quitting the game', async () => {
+    vi.mocked(isTauri).mockReturnValue(true);
+    vi.mocked(confirm).mockResolvedValue(true);
+    const destroy = vi.fn().mockResolvedValue(undefined);
+    vi.mocked(WebviewWindow.getByLabel).mockResolvedValue({ destroy } as unknown as WebviewWindow);
+    const preventDefault = vi.fn();
+    await handleCloseRequest({ preventDefault });
+    expect(destroy).toHaveBeenCalledOnce();
+    expect(preventDefault).not.toHaveBeenCalled();
+  });
+
+  it('keeps the license window when quitting is cancelled', async () => {
+    vi.mocked(isTauri).mockReturnValue(true);
+    vi.mocked(confirm).mockResolvedValue(false);
+    const preventDefault = vi.fn();
+    await handleCloseRequest({ preventDefault });
+    expect(preventDefault).toHaveBeenCalledOnce();
+    expect(WebviewWindow.getByLabel).not.toHaveBeenCalled();
+  });
+
   it('allows Tauri to destroy the window after confirmation, without issuing another close request', async () => {
     const setPaused = vi.fn();
     runtime.__MICROPOLIS_SINGLETON__ = { simulator: { micropolis: {}, paused: false, setPaused } };
