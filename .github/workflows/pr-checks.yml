@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 22
       # Structure verification only reads manifests; no dependencies are needed.
-      - run: pnpm run verify:structure
+      - run: node scripts/verify-monorepo-structure.mjs
 
   build-ts:
     name: TypeScript builds (vitamoo / mooshow / vitamoospace)
