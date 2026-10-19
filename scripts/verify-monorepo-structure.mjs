@@ -31,8 +31,9 @@
  */
 
 import { readFileSync, lstatSync, statSync, existsSync, readlinkSync, readdirSync } from 'node:fs';
-import { resolve, dirname, join } from 'node:path';
+import { resolve, dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(__dirname, '..');
@@ -129,13 +130,12 @@ check('pnpm-workspace.yaml declares packages/* glob', () => {
 	if (!/['"]?packages\/\*['"]?/.test(workspace)) throw new Error("packages/* glob missing");
 });
 
-const workspaceDirs = ['apps', 'packages']
-	.flatMap((root) =>
-		readdirSync(join(repoRoot, root), { withFileTypes: true })
-			.filter((entry) => entry.isDirectory())
-			.map((entry) => `${root}/${entry.name}`),
-	)
-	.filter((dir) => existsSync(join(repoRoot, dir, 'package.json')));
+// Let pnpm interpret pnpm-workspace.yaml, including nested/excluded globs.
+// Listing manifests does not install dependencies or run lifecycle scripts.
+const workspaceDirs = JSON.parse(execFileSync('pnpm',
+	['--recursive', 'list', '--depth', '-1', '--json'], { cwd: repoRoot, encoding: 'utf8' }))
+	.filter((pkg) => resolve(pkg.path) !== repoRoot)
+	.map((pkg) => relative(repoRoot, pkg.path));
 
 const workspacePackages = new Map();
 for (const dir of workspaceDirs) {
