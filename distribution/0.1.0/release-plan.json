@@ -1,0 +1,48 @@
+{
+  "repository": "Toshiyuki-Kanai/micropolis-tauri",
+  "version": "0.1.0",
+  "title": "Micropolis v0.1.0",
+  "description": "Initial macOS release powered by Tauri.",
+  "tag": "v0.1.0",
+  "asset": "Micropolis-0.1.0-arm64.dmg",
+  "architecture": "aarch64-apple-darwin",
+  "minimumMacOS": "13.0",
+  "inspectedCommit": "4940add8365007753711367bd93afe9e4cf0a24e",
+  "status": "ready-for-pull-request",
+  "blockers": [],
+  "tagCreated": false,
+  "releaseCreated": false,
+  "assetUploaded": false,
+  "signingIdentity": "Developer ID Application: Toshiyuki Kanai (WBADLDV5D2)",
+  "notaryProfile": "MacNotarization",
+  "sourceAsset": "Micropolis-0.1.0-source.tar.gz",
+  "appNotarization": {
+    "id": "e3de1a64-29e6-4011-a947-3751cff93d75",
+    "status": "Accepted",
+    "stapled": true,
+    "gatekeeper": "accepted"
+  },
+  "dmgNotarization": {
+    "id": "923044c2-ab01-4b33-bb40-b9f965f7a239",
+    "status": "Accepted",
+    "stapled": true,
+    "gatekeeper": "accepted"
+  },
+  "pendingUserChecks": [
+    "Review and merge PR manually; create tag and GitHub Release and upload assets manually"
+  ],
+  "sha256": {
+    "dmg": "2c4ab2396b0eabb6a01c446fb37918b3a4004c877272d1c7f3938f78ec20801d",
+    "source": "301e3b5195b4fe2a770c43005ca7e24266bb04f7b619f89401d9846349424797"
+  },
+  "manualDMGInstallationAndGameplay": {
+    "status": "passed",
+    "reportedBy": "user",
+    "date": "2026-10-19"
+  },
+  "authorizedGitScope": [
+    "commit current release changes",
+    "push codex/tauri-macos",
+    "create pull request targeting main"
+  ]
+}

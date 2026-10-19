@@ -1,6 +1,6 @@
 // Run after the desktop web build. Uses the release CSP and rejects all external requests.
 import { createServer } from 'node:http';
-import { readFile } from 'node:fs/promises';
+import { readFile, readdir } from 'node:fs/promises';
 import { mkdirSync } from 'node:fs';
 import { resolve, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -80,6 +80,12 @@ try {
     return { bytes:saved.length, mapRestored:ok, fundsRestored:c.totalFunds === funds, timeRestored:c.cityTime === time };
   });
   assert.deepEqual(roundtrip, { bytes:51120, mapRestored:true, fundsRestored:true, timeRestored:true });
+  assert(!(await readdir(resolve(dist, 'assets'))).some(name => /^all-.*\.png$/.test(name)), 'Unverified combined atlas must not ship');
+  const legalPage = await context.newPage();
+  await legalPage.goto(origin + '/licenses/index.html');
+  await legalPage.getByRole('heading', { name:'Micropolis 0.1.0 — Licenses and Source', exact:true }).waitFor();
+  assert.equal(await legalPage.getByRole('link', { name:'FiraMono-OFL.txt', exact:true }).count(), 1);
+  await legalPage.close();
   assert.deepEqual(errors, [], 'No runtime errors / CSP violations');
   assert.deepEqual(external, [], 'All runtime assets must be local');
   assert.deepEqual(failures, [], 'No missing or blocked assets');

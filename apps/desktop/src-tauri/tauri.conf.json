@@ -34,7 +34,19 @@
             "core:window:allow-destroy",
             "dialog:default",
             "fs:allow-read-file",
-            "fs:allow-write-file"
+            "fs:allow-write-file",
+            "core:webview:allow-create-webview-window"
+          ]
+        },
+        {
+          "identifier": "licenses",
+          "windows": [
+            "licenses"
+          ],
+          "permissions": [
+            "core:default",
+            "core:window:allow-close",
+            "core:window:allow-destroy"
           ]
         }
       ]
@@ -50,7 +62,8 @@
     "copyright": "Copyright \u00a9 1989\u20132007 Electronic Arts Inc. and Micropolis contributors. Modified Tauri distribution.",
     "macOS": {
       "minimumSystemVersion": "13.0",
-      "signingIdentity": "-"
+      "signingIdentity": "-",
+      "hardenedRuntime": true
     },
     "icon": [
       "icons/icon.icns",
